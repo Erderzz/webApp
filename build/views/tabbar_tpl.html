@@ -1,0 +1,20 @@
+<div class="tabbar">
+    <ul>
+        <li ng-click="changePage(0)">
+            <img src="images/tabbar/{{id == 0 ? 'homeSel.png' : 'home_icon.png'}}" alt="">
+            <p>首页</p>
+        </li>
+        <li ng-click="changePage(1)">
+            <img src="images/tabbar/{{id == 1 ? 'authorSel.png' : 'author_icon.png'}}" alt="">
+            <p>作者</p>
+        </li>
+        <li ng-click="changePage(2)">
+            <img src="images/tabbar/{{id == 2 ? 'contentSel.png' : 'content_icon.png'}}" alt="">
+            <p>栏目</p>
+        </li>
+        <li ng-click="changePage(3)">
+            <img src="images/tabbar/{{id == 3 ? 'mySel.png' : 'my_icon.png'}}" alt="">
+            <p>我的</p>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,27 @@
+
+<div class="box">
+    <div ui-sref='home.detail({id:key})' class='home_content' ng-repeat='(key,value) in homeData.posts'>
+        <p class="tag" ng-show="value.column.name">{{value.column.name}}</p>
+        <h3>{{value.title}}</h3>
+
+        <!--第一种布局样式-->
+        <div class="post1 clearfix" ng-if="value.display_style == '10001'">
+            <p>{{value.abstract}}</p>
+        </div>
+
+        <!--第二种布局样式-->
+        <div class="post2 clearfix" ng-if="value.display_style == '10002'">
+            <p>{{value.abstract}}</p>
+            <img src="images/home/post_1.png" alt="">
+        </div>
+
+        <!--第三种布局样式-->
+        <div class="post3" ng-if="value.display_style == '10003'">
+            <ul>
+                <li> <img src="images/home/post_5.png" alt=""></li>
+                <li> <img src="images/home/post_3.png" alt=""></li>
+                <li> <img src="images/home/post_4.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</div>

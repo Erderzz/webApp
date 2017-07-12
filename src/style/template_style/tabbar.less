@@ -1,0 +1,32 @@
+
+// 底部tabbar样式
+.tabbar{
+  background-color: white;
+  width: 100%;
+  .h(49);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top:1px solid #ccc;
+  color: #555555;
+  ul{
+    width: 100%;
+    display: flex;
+    li{
+      flex: 1;
+      text-align: center;
+      img{
+        .w(24);
+        .mt(5);
+      }
+      p{
+        .fs(13);
+        position: relative;
+        .bottom(4);
+      }
+    }
+  }
+}
+.current{
+  color: red;
+}

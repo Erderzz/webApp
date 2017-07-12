@@ -1,0 +1,63 @@
+// home首页内容布局样式
+.box{
+  .padding(70,0);
+}
+.home_details{
+  .padding(70,10);
+}
+.home_content{
+  .mt(5);
+  .padding(0,10);
+  border-top:1px solid #ccc;
+  p.tag{
+    .w(65);
+    .h(25);
+    .lh(25);
+    text-align: center;
+    background-color: grey;
+    color: white;
+    border-radius:0 0 5px 5px ;
+  };
+  h3{
+    .fs(20);
+    .padding(10,0);
+    position: relative;
+  };
+  // 第一种布局格式
+  .post1{
+    p{
+      .fs(15);
+      .lh(25);
+    }
+  }
+  // 第二种布局格式
+  .post2{
+    p{
+      .fs(15);
+      .lh(32);
+      .w(250);
+      .h(100);
+      float: left;
+      overflow: hidden;
+    };
+    img {
+      .w(100);
+      float: right;
+    };
+  };
+
+  // 第三种布局格式
+  .post3{
+    ul{
+      width: 100%;
+      display: flex;
+      li{
+        flex: 1;
+        text-align: center;
+        img{
+          .w(110);
+        }
+      }
+    }
+  }
+}
